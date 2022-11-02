@@ -1,4 +1,4 @@
-# How to use Context Api in React[React documentation](https://reactjs.org/docs/context.html).
+# [How to use Context Api in React](https://reactjs.org/docs/context.html).
 
  1. step:1 import create createContext and called it using variable.
  2. step:2 export it(createContext).
