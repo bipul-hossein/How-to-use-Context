@@ -6,7 +6,7 @@
 import React from 'react';
 import { createContext } from 'react';
 
-export const[UserContext = createContext();
+export const UserContext = createContext();
 
 const Context = ({children}) => {
 
@@ -21,7 +21,8 @@ const Context = ({children}) => {
   return (
         <UserContext.Provider value={ authInfo}>
             {children}
-        </UserContext.Provider>   
+        </UserContext.Provider> 
+        
 );
 };
 
