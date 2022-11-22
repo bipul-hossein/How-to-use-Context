@@ -3,7 +3,7 @@ import { createContext } from 'react';
 
 
 
-// step:1 import create createContext and called it using variable.
+// step:1 import create createContext and called it using variable.(Globally)
 // step:2 export it(createContext).
 export const UserContext = createContext();
 
