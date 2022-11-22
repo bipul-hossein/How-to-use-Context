@@ -22,7 +22,9 @@ const Context = ({children}) => {
         <UserContext.Provider value={ authInfo}>
             {children}
         </UserContext.Provider>   
-);};
+);
+};
+
 export default Context;
 
 
