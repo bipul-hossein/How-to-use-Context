@@ -6,7 +6,7 @@
 import React from 'react';
 import { createContext } from 'react';
 
-export const [UserContext] = createContext();
+export const[UserContext = createContext();
 
 const Context = ({children}) => {
 
@@ -22,10 +22,9 @@ step:4 Go index.js; rep the app.js with context
         <UserContext.Provider value={ authInfo}>
             {children}
         </UserContext.Provider>   
-);
-};
-
+);};
 export default Context;
+
 
 step:5 to received data
 * Go to another file and use uesContext like this:
