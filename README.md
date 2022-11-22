@@ -17,7 +17,7 @@ const Context = ({children}) => {
 
 
 #### step:3 Global export property name and(.Provider) as children
-#### step:4 Go index.js; rep the app.js with context 
+
 ```ruby
   return (
   
@@ -28,10 +28,30 @@ const Context = ({children}) => {
  );};
 export default Context;
 ```
+#### step:4 Go index.js; rep the app.js with context
+
+```ruby
+import Context from './contextsApi/Context';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Context>
+      <App />
+    </Context>
+  </React.StrictMode>
+);
+reportWebVitals();
+
+```
 
 #### step:5 to received data
 * Go to another file and use uesContext like this:
+
 ```ruby
+import { UserContext } from './contextsApi/Context';
+
  const {me} = useContext(UserContext);
  
  ```
+### Written by [Md Bipul Hossain](https://web.facebook.com/bipulhossainFB)
