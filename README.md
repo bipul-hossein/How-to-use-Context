@@ -6,7 +6,7 @@
 import React from 'react';
 import { createContext } from 'react';
 
-export const <span style="font-weight:bold;">UserContext</span> = createContext();
+export const [UserContext] = createContext();
 
 const Context = ({children}) => {
 
@@ -14,21 +14,19 @@ const Context = ({children}) => {
     const authInfo = { me }
 
 
+
+step:3 Global export property name and(.Provider) as children
+step:4 Go index.js; rep the app.js with context 
+
     return (
-
-step:3 global export property name and(.Provider) as children
-
-// step:4 go index.js; rep the app.js with context 
-     
         <UserContext.Provider value={ authInfo}>
             {children}
-        </UserContext.Provider>
-
-// go to another file and use uesContext like this:
-// const {me} = useContext(UserContext);
-
-    
+        </UserContext.Provider>   
 );
 };
 
 export default Context;
+
+step:5 to received data
+* Go to another file and use uesContext like this:
+ const {me} = useContext(UserContext);
