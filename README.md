@@ -1,7 +1,7 @@
 # [How to use Context Api in React](https://reactjs.org/docs/context.html).
 
- #### 1. step:1 import create createContext and called it using variable.(Globally)
- #### 2. step:2 export it(createContext).
+ #### step:1 import create createContext and called it using variable.(Globally)
+ #### step:2 export it(createContext).
 
 ```ruby
 import React from 'react';
