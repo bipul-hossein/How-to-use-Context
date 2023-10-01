@@ -19,7 +19,7 @@ const authInfo = { me }
  
  
 ##### 3. Global export property name and(.Provider) as children. And then export the function.
-`
+ ```
   return (
   
         <UserContext.Provider value={ authInfo}> // NO.3
@@ -27,10 +27,10 @@ const authInfo = { me }
         </UserContext.Provider> 
         
  );
- ```ruby
+
 export default Context; //export the function
 ```
-`
+
 ##### 4. Go (index.js) root file and rep the (App)js file with context
 
 ```ruby
